@@ -2,9 +2,11 @@
 
 	stroke-dasharray: 4000;
 	stroke-dashoffset: 4000;
-
-  -webkit-animation: dash 6s linear alternate infinite;
-  		  animation: dash 6s linear alternate infinite;
+	fill: #FFFFFf;
+  -webkit-animation: dash 6s linear alternate forwards,
+  					 filler 1s 5.9s linear alternate 1 forwards; 
+  		  animation: dash 6s linear alternate forwards,
+  		  			 filler 1s 5.9s linear alternate 1 forwards; 
 }
 
 @-webkit-keyframes dash {
@@ -18,12 +20,23 @@
   }
 }
 
+@-webkit-keyframes filler {
+	to { fill: #000000;}
+}
+@keyframes filler {
+	to {fill: #000000;}
+
+}
+
 .double-u {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
+	fill: #FFFFFf;
+  -webkit-animation: dash 6.175s linear alternate forwards,
+					filler 1s 5.9s linear alternate 1 forwards;
+  		  animation: dash 6.175s linear alternate forwards,
+  		  filler 1s 5.9s linear alternate 1 forwards;
 
-  -webkit-animation: dash 6.175s linear alternate infinite;
-  		  animation: dash 6.175s linear alternate infinite;
 }
 
 
@@ -31,8 +44,10 @@
 .orld {
 	stroke-dasharray: 4000;
 	stroke-dashoffset: 4000;
-
-  -webkit-animation: dash 6s linear alternate infinite;
-  		  animation: dash 6s linear alternate infinite;
+	fill: #FFFFFf;
+  -webkit-animation: dash 6s linear alternate forwards,
+  					filler 1s 5.9s linear alternate 1 forwards;
+  		  animation: dash 6s linear alternate forwards,
+  		  	filler 1s 5.9s linear alternate 1 forwards;
 }
 
