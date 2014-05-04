@@ -1,0 +1,38 @@
+.hello {
+
+	stroke-dasharray: 4000;
+	stroke-dashoffset: 4000;
+
+  -webkit-animation: dash 6s linear alternate infinite;
+  		  animation: dash 6s linear alternate infinite;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+ }
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.double-u {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+
+  -webkit-animation: dash 6.175s linear alternate infinite;
+  		  animation: dash 6.175s linear alternate infinite;
+}
+
+
+
+.orld {
+	stroke-dasharray: 4000;
+	stroke-dashoffset: 4000;
+
+  -webkit-animation: dash 6s linear alternate infinite;
+  		  animation: dash 6s linear alternate infinite;
+}
+
